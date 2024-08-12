@@ -539,7 +539,12 @@
           <a target="_blank" href="copyright.htm">免責及版權聲明</a>
       </h4>
     </footer>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="./JS/app.js"></script>
     <style>
+        #text_container{
+            width: auto;
+        }
         #scoutLinks tr td{
             width: 100%;
         }
@@ -556,8 +561,18 @@
         .logo{
             max-width: 25px;
         }
+        /*Tablet display*/
+        @media only screen and (min-width: 768px){
+            #text_container{
+                width: 90%;
+            }
+        }
+        /*PC display*/
+        @media only screen and (min-width: 1023px){
+            #text_container{
+                width: 70%;
+            }
+        }
     </style>
 </body>
-<link rel="stylesheet" href="CSS/style.css">
-<script src="./JS/app.js"></script>
 </html>
